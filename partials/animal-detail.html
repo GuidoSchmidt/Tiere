@@ -1,0 +1,22 @@
+<div class="animal-detail">
+	<div class="row" ng-controller="animalOverviewController">
+		<div class="one-third column animal-image"
+		     style="background-image: url('{{animals[currentAnimal].image}}');
+		            background-size: cover;
+		            background-position: center;">
+			
+		</div>
+		<div class="two-thirds column animal-description">
+			<div class="content">
+				<h1>{{animals[currentAnimal].name}}</h1>
+				<p>
+					{{animals[currentAnimal].description}}
+				</p>
+			</div>
+			<div class="controls">
+				<img ng-click="playVideo()" src="../img/icons/video.png" height="160" width="160">
+				<img ng-click="playAudio()" src="../img/icons/audio.png" height="160" width="160">
+			</div>
+		</div>
+	</div>
+</div>

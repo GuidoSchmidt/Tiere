@@ -1,0 +1,12 @@
+<div class="animal-overview">
+	<h1>Ich verwandle mich in ein Tier!</h1>
+	<div ng-controller="animalOverviewController">
+		<div class="animal" ng-repeat="animal in animals">
+			<div ng-click="setCurrent($index)" class="img-wrapper"
+				 style="background-image: url('{{animal.image}}');
+				        background-size: cover;">
+			</div>
+			<h4 ng-click="setCurrent($index)">{{animal.name}}</h4>
+		</div>
+	</div>
+</div>

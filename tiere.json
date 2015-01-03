@@ -1,0 +1,17 @@
+{
+	'papagei': {
+		'bild': 'http://www.natur-beobachtungen.de/files/vogelpark-walsrode/papagei2.jpg',
+		'video': '',
+		'audio': ''
+	},
+	'löwe': {
+		'bild': '',
+		'video': '',
+		'audio': ''
+	},
+	'gorilla': {
+		'bild': 'http://eofdreams.com/data_images/dreams/gorilla/gorilla-05.jpg',
+		'video': '',
+		'audio': ''
+	}
+}
