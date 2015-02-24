@@ -7,7 +7,6 @@ app.config(['$routeProvider', function($routeProvide) {
   $routeProvide
     .when('/', {templateUrl: './partials/animal-overview.html', controller: 'PageCtrl'})
     .when('/animal-detail', {templateUrl: './partials/animal-detail.html', controller: 'PageCtrl'})
-    .when('/about', {templateUrl: './partials/about.html', controller: 'PageCtrl'})
     .otherwise('/404', {templateUrl: '.partials/404.html',controller: 'PageCtrl'});
 }]);
 
@@ -16,7 +15,7 @@ app.run(function ($rootScope) {
 });
 
 app.controller('PageCtrl', function($scope, $location, $rootScope) {
-  console.log("Page controller initialized");
+  //console.log("Page controller initialized");
   $scope.animals = [
     {
       name: 'Der Papagei',
