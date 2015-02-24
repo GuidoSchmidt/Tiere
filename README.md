@@ -1,4 +1,4 @@
-![Tiere Icon](./img/icons/app-s.png)
+![Tiere Icon](./img/app.png)
 
 # Tiere
 Interaktive Webapp für Schulkinder zum Thema Tiere
