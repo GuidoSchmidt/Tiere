@@ -1,5 +1,4 @@
 <div class="animal-detail">
-	<div class="row" ng-controller="animalOverviewController">
 		<div class="one-third column animal-image"
 		     style="background-image: url('{{animals[currentAnimal].image}}');
 		            background-size: cover;
@@ -7,16 +6,37 @@
 			
 		</div>
 		<div class="two-thirds column animal-description">
+			<h5 class="back-btn" ng-click="back()">&larr; <span>zurück</span></h5>
+			<hr>
 			<div class="content">
 				<h1>{{animals[currentAnimal].name}}</h1>
 				<p>
 					{{animals[currentAnimal].description}}
 				</p>
 			</div>
-			<div class="controls">
-				<img ng-click="playVideo()" src="../img/icons/video.png" height="160" width="160">
-				<img ng-click="playAudio()" src="../img/icons/audio.png" height="160" width="160">
+			<div class="lower">
+				<div class="controls">
+					<div class="buttonWrap">
+						<img ng-click="playVideo()" src="./img/icons/video.png" height="160" width="160">
+						<span class="tooltip">Video abspielen</span>
+					</div>
+					
+					<!--
+					<div class="buttonWrap">
+						<img ng-click="playAudio()" src="./img/icons/audio.png" height="160" width="160">
+						<span class="tooltip">Geräusch abspielen</span>
+					</div>
+					-->
+				</div>
+				<div class="video">
+					<div class="iframe-wrapper">
+						<iframe id="video-frame" width="80%"
+								src=""
+								frameborder="0"
+								allowfullscreen>
+						</iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 </div>
