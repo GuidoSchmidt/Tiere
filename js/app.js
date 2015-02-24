@@ -7,6 +7,7 @@ app.config(['$routeProvider', function($routeProvide) {
   $routeProvide
     .when('/', {templateUrl: './partials/animal-overview.html', controller: 'PageCtrl'})
     .when('/animal-detail', {templateUrl: './partials/animal-detail.html', controller: 'PageCtrl'})
+    .when('/about', {templateUrl: './partials/about.html', controller: 'PageCtrl'})
     .otherwise('/404', {templateUrl: '.partials/404.html',controller: 'PageCtrl'});
 }]);
 
@@ -47,7 +48,6 @@ app.controller('PageCtrl', function($scope, $location, $rootScope) {
   $scope.setCurrent = function(animal) {
     console.log(animal);
     $rootScope.currentAnimalID = animal;
-    //$location.path('/animal-detail');
   };
 
   $scope.$on('$locationChangeSuccess', function() {
@@ -67,9 +67,10 @@ app.controller('PageCtrl', function($scope, $location, $rootScope) {
   };
 
   $scope.playVideo = function() {
-    document.getElementById("video-frame").setAttribute("src", $scope.animals[$scope.currentAnimal].video);
-    document.getElementById("video-frame").setAttribute("height", $('.video').width() * 9.0/16.0);
-    //$scope.videoElement.setAttribute('src', $scope.animals[$scope.currentAnimal].video);
+    document.getElementById("video-frame").setAttribute("src", $scope.animals[$scope.currentAnimal].video + '&controls=0&showinfo=0');
+    document.getElementById("video-frame").setAttribute("height", document.body.scrollHeight);
+    document.getElementById("video").style.display = 'inline';
+    document.getElementById("video").style.opacity = 1;
   };
 
   $scope.readText = function() {
@@ -77,5 +78,11 @@ app.controller('PageCtrl', function($scope, $location, $rootScope) {
 
   $scope.back = function() {
     $location.path('/');
+  };
+
+  $scope.closeVideo = function() {
+    document.getElementById("video").style.opacity = 0;
+    document.getElementById("video").style.display = 'none';
+    document.getElementById("video-frame").setAttribute("src", "");
   };
 });
