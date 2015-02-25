@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+
+$text-color-light: rgb(180, 180, 180);
+
+.description-section {
+    padding: 15em 2em 0 2em;
+    text-align: center;
+
+    h1 {
+        font-family: 'Just Me Again Down Here', cursive;
+        font-size: 10em;
+    }
+}
+
+.download-section {
+    text-align: center;
+
+    ul {
+        li {
+            display: inline;
+            padding: 2em;
+            margin: 3em 3em;
+        }
+    }
+}
+
+
+footer {
+    color: $text-color-light;
+    text-align: center;
+}

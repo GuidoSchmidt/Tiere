@@ -1,0 +1,25 @@
+{
+  "name": "tiere webpage",
+  "version": "0.0.1",
+  "homepage": "https://github.com/GuidoSchmidt/Tiere",
+  "authors": [
+    "Guido Schmidt <guido.schmidt.2912@gmail.com>"
+  ],
+  "description": "webpage for interactive app about animals",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.3.8",
+    "google-tts": "~1.0.1",
+    "ng-audio": "~0.0.2",
+    "skeleton": "~2.0.4"
+  }
+}
