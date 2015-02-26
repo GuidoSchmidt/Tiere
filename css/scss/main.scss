@@ -63,7 +63,7 @@ body {
 	height: 100%;
 	width: 100%;
 
-	@-webkit-keyframes myfirst {
+	@-webkit-keyframes fadeIn {
 		  0% {opacity: 0.0;}
 		100% {opacity: 1.0;}
 	}
@@ -75,13 +75,15 @@ body {
 		display: inline-block;
 		border-bottom: 5px solid $deco-color;
 		-webkit-animation-delay: 1s;
-		-webkit-animation: myfirst 2s;
+		-webkit-animation: fadeIn 2s;
 	}
 
 	.animal {
 		text-align: center;
 		margin: 5% 2%;
 		display: inline-block;
+		-webkit-animation-delay: 1.5s;
+		-webkit-animation: fadeIn 3s;
 
 		.img-wrapper {
 			width: 15em;
@@ -117,6 +119,8 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	-webkit-animation-delay: 1.5s;
+	-webkit-animation: fadeIn 2s;
 
 	.back-btn {
 		margin: 1em 1.5em;
@@ -219,6 +223,8 @@ body {
 	display: none;
 	z-index: 99;
 	-webkit-transition: all 0.5s ease;
+	-webkit-animation-delay: 1s;
+	-webkit-animation: fadeIn 3s;
 
 	iframe {
 		-webkit-transition: all 0.5s ease;
@@ -233,6 +239,8 @@ body {
 		font-weight: bold;
 		color: white;
 		-webkit-transition: all 0.5s ease;
+		-webkit-animation-delay: 3s;
+		-webkit-animation: fadeIn 2s;
 
 		&:hover {
 			opacity: 1.0;
