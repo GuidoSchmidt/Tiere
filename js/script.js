@@ -10,12 +10,12 @@ $(document).ready(function() {
 
   window.setInterval(function(){
     if(currentScreenshot === 0) {
-      $('.screenshot').css('background-image', 'url(./Tiere/img/screenshotA.png)');
+      $('.screenshot').css('background-image', 'url(./img/screenshotA.png)');
       $('.screenshot').css('background-size', 'cover');
       currentScreenshot = 1;
     }
     else {
-      $('.screenshot').css('background-image', 'url(./Tiere/img/screenshotB.png)');
+      $('.screenshot').css('background-image', 'url(./img/screenshotB.png)');
       $('.screenshot').css('background-size', 'cover');
       currentScreenshot = 0;
     }
