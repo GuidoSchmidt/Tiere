@@ -1,8 +1,8 @@
-# bower
+# atom shell bin 
 /build
 
 # bower
-/bower_components
+/dependencies
 
 # npm
 /node_modules
