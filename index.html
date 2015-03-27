@@ -40,6 +40,33 @@
                 Entpacke das tar-Archiv. Dafür kannst du den Befehl <span><strong>tar -xvf tiere-1.0.tar.gz</strong></span> verwenden, oder ein Entpackprogram verwenden. Danach kannst du einfach das Program <strong>tiere</strong> starten.
             </p>
         </div>
+        <div class="add-animals">
+          <h2><strong>Tiere hinzufügen</strong></h2>
+          <p>
+            Um Tiere hinzuzufügen muss nur die Datei <b>tiere.json</b> angepasst werden. Dabei steht jedes Tier zwischen zwei geschwungenen Klammern <b>{ }</b>, die mit Kommas getrennt werden. Ein Eintrag für ein Tier sieht immer wie folgt aus:
+          </p>
+          <div class="json">
+            {<br>
+              <b class="item">"name"</b>        : <span class="string">"Tiername"</span>,<br>
+              <b class="item">"image"</b>       : <span class="string">"Link zum Bild des Tiers (Local oder Internetlink)"</span>,<br>
+              <b class="item">"video"</b>       : <span class="string">"Link zum Yotube-Video des Tieres"</span>,<br>
+              <b class="item">"audio"</b>       : <span class="string">"Link zur Audio-Datei des Tieres"</span>,<br>
+              <b class="item">"description"</b> : <span class="string">"Beschreibungstext des Tieres"</span><br>
+            },
+          </div>
+          <p>
+            Ein Beispiel für einen neuen Eintrag könnte z.B. so aussehen:
+          </p>
+          <div class="json">
+            {<br>
+              <b class="item">"name"</b>        : <span class="string">"Bär"</span>,<br>
+              <b class="item">"image"</b>       : <span class="string">""</span>,<br>
+              <b class="item">"video"</b>       : <span class="string">""</span>,<br>
+              <b class="item">"audio"</b>       : <span class="string">"./audio/baer.mp3"</span>,<br>
+              <b class="item">"description"</b> : <span class="string">"Der Bär ist ein sehr großes Tier."</span><br>
+            },
+          </div>
+        </div>
         <footer>
             &copy; 2015, Guido Schmidt
         </footer>

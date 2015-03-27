@@ -1,0 +1,3 @@
+# Ignore css, we use scss compiled to css
+*.css
+*.css.map
