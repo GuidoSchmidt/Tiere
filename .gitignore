@@ -12,5 +12,5 @@
 
 # SCSS and CSS files and folders
 .sass-cache/
-*.css
-*.css.map
+style.css
+style.css.map
