@@ -1,6 +1,5 @@
 var app = angular.module('animalApp', [
-  'ngRoute',
-  'ngAudio'
+  'ngRoute'
 ]);
 
 app.config(['$routeProvider', function($routeProvide) {

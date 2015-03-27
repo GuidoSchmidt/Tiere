@@ -1,4 +1,7 @@
 # bower
+/build
+
+# bower
 /bower_components
 
 # npm
