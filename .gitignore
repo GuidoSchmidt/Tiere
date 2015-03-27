@@ -1,3 +1,16 @@
-# Ignore css, we use scss compiled to css
+# atom shell bin 
+/build
+
+# bower
+/dependencies
+
+# npm
+/node_modules
+
+# atom-shell
+/my-dependencies
+
+# SCSS and CSS files and folders
+.sass-cache/
 *.css
 *.css.map

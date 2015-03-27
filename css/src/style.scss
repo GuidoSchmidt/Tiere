@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
 
 $text-color-light : rgb(180, 180, 180);
-$deco-color       : rgb(97, 203, 255);
+$deco-color       : rgb( 97, 203, 255);
+$string-color     : rgb(217,  96, 25);
 
 
 .description-section {
@@ -71,6 +72,21 @@ $deco-color       : rgb(97, 203, 255);
         }
     }
 }
+
+.add-animals {
+  .json {
+    padding: 0 0 0.5em 0;
+      .item {
+        padding-left: 2em;
+        color: $deco-color;
+      }
+      .string {
+        color: $string-color;
+        font-weight: bold;
+      }
+  }
+}
+
 
 
 footer {
