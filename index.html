@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="description-section">
+            <div class="screenshots">
+                <div class="overlay"></div>
+                <div class="screenshot"></div>
+            </div>
             <div class="logo">
                 <ul>
                     <li><img src="img/app-icon.png" alt="Tiere Application Icon"></li>
@@ -26,7 +32,7 @@
             <h2><strong>Download</strong></h2>
             <small>Version 1.0</small>
             <ul>
-                <li><a target="_blank" href="build/">Windows</a></li>
+                <li><a target="_blank" href="builds/windows/1.0/tiere-1.0.zip">Windows</a></li>
                 <li><a target="_blank" href="builds/linux/1.0/tiere-1.0.tar.gz">Linux</a></li>
             </ul>
         </div>
@@ -34,12 +40,15 @@
         <div class="install">
             <h2><strong>Installation</strong></h2>
             <h4>Windows</h4>
-            <p></p>
+            <p>
+                Entpacke das zip-Archiv in einen Ordner. Danach starte einfach <strong>tiere.exe</strong>.
+            </p>
             <h4>Linux</h4>
             <p>
                 Entpacke das tar-Archiv. Dafür kannst du den Befehl <span><strong>tar -xvf tiere-1.0.tar.gz</strong></span> verwenden, oder ein Entpackprogram verwenden. Danach kannst du einfach das Program <strong>tiere</strong> starten.
             </p>
         </div>
+
         <div class="add-animals">
           <h2><strong>Tiere hinzufügen</strong></h2>
           <p>
@@ -66,9 +75,9 @@
               <b class="item">"description"</b> : <span class="string">"Der Bär ist ein sehr großes Tier."</span><br>
             },
           </div>
-        </div>
+
         <footer>
-            &copy; 2015, Guido Schmidt
+            &copy; 2015, Guido Schmidt. Idee: Laura Schulze &amp; Verena Bierbaum
         </footer>
     </div>
 </body>
