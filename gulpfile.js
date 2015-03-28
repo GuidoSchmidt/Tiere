@@ -26,5 +26,5 @@ gulp.task('scss', function () {
 
 
 //--- Main ---------------------------------------------------------------------
-gulp.task('default', ['download-atom', 'bower'], function() {
+gulp.task('default', ['download-atom', 'bower', 'scss'], function() {
 });
